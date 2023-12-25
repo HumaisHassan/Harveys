@@ -352,3 +352,65 @@ body{
     font-size: 2vw;
  }
 
+
+ .btn-box-2a a {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 9.452vw;
+	height: 100%;
+	font-size: 1.197vw;
+	background: #f4bc27;
+	border: 0.126vw solid #f4bc27;
+	border-radius: 0.504vw;
+	color: #090212;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 0.063vw;
+	z-index: 1;
+	overflow: hidden;
+	transition: .5s;
+	
+}
+
+.btn-box-2a a:nth-child(2) {
+	background: transparent;
+	color: #f4bc27;
+}
+
+.btn-box-2a a:nth-child(2):hover {
+	color: #090212;
+}
+
+.btn-box-2a a:nth-child(2)::before {
+	background: #f4bc27;
+}
+
+.btn-box-2a a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #090212;
+	z-index: -1;
+	transition: .5s;
+}
+
+.btn-box-2a a:hover::before {
+	width: 100%;
+}
+
+.btn-box-2a a:hover {
+	color: #f4bc27;
+}
+
+.btn-box-2a{
+	margin: 1.5vw 0 0 0;
+	display: flex;
+	justify-content: left;
+	justify-content: space-between;
+	width: 35vw;
+}
